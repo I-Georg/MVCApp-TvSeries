@@ -1,0 +1,59 @@
+﻿@model IEnumerable<MVCApp.Models.TvModel>
+
+@{
+    ViewBag.Title = "ViewEmployees";
+}
+
+<h2>View TV Series</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddSeries")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TvSeriesID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChannelOrigin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.TvSeriesID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Title)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ChannelOrigin)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Genre)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Rating)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+
+</tr>
+}
+
+</table>
