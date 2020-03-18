@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MVCDemoDB", "..\MVCDemoDB\MVCDemoDB.sqlproj", "{50C4DBB9-3A67-4DF1-8A16-57849DA57C93}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TvSeries", "TvSeries", "{8B4AB992-C0F5-46EA-B22C-D99459122379}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B616799-519A-4729-86EE-C82DAE1F497C} = {8B4AB992-C0F5-46EA-B22C-D99459122379}
+		{481B279E-9855-4575-8E4F-0E3AA9FE014D} = {8B4AB992-C0F5-46EA-B22C-D99459122379}
+		{25F459B6-5345-4D13-9DDD-B1654CA169F1} = {8B4AB992-C0F5-46EA-B22C-D99459122379}
+		{50C4DBB9-3A67-4DF1-8A16-57849DA57C93} = {8B4AB992-C0F5-46EA-B22C-D99459122379}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6A7EF6A-35E6-426F-ABFB-8F4E203B6994}
