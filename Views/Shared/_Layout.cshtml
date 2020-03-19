@@ -10,11 +10,12 @@
 <body>
     <nav class="navbar navbar-default">
 
-                @Html.ActionLink("Home", "Index", "Home")
-                @Html.ActionLink("Add Series", "AddSeries", "Home")
-                @Html.ActionLink("View Tv Series", "ViewTvSeries", "Home")
-               
-        </nav>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Add Series", "AddSeries", "Home")
+        @Html.ActionLink("View Tv Series", "ViewTvSeries", "Home")
+        @Html.ActionLink("Sign up", "SignUp", "Home")
+
+    </nav>
         <div class="container body-content">
             @RenderBody()
             <hr />

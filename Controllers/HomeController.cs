@@ -29,6 +29,26 @@ namespace MVCApp.Controllers
 
             return View();
         }
+        public ActionResult SignUp()
+        {
+            ViewBag.Message = "User sign up";
+
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult SignUp(UserModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                int recordsCreated = CreateUsers(model.Username, model.Email, model.Password
+                                                    );
+                return RedirectToAction("Index");
+            }
+
+            return View();
+        }
+
 
         public ActionResult ViewTvSeries()
         {

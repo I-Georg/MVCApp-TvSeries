@@ -32,7 +32,7 @@ namespace MVCApp.Models
 
         [Display(Name = "Price")]
         [Required(ErrorMessage = "you need to enter the price you paid")]
-        //[Range(1, 100, ErrorMessage = "You need to enter a number")]
+        [Range(1, 100, ErrorMessage = "You need to enter a number")]
         public decimal Price { get; set; }
 
 
